@@ -1,0 +1,48 @@
+
+.reasons {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.reasons__heading {
+    font-size: 40px;
+    font-family: Arial;
+    color: #000
+}
+
+@media (max-width: 480px) {
+    .reasons__heading {
+        font-size: 30px
+    }
+}
+
+.reasons__heading-block {
+    padding-top: 20px;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold
+}
+
+.reasons__content {
+    font-size: 18px;
+    color: #9b9a9a;
+    font-family: Arial
+}
+
+.input-container {
+    position: relative
+}
+
+@media (min-width: 1000px) {
+    .modal-dialog {
+        max-width: 1170px !important
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-dialog {
+        max-width: 450px !important;
+        margin-left: auto;
+        margin-right: auto
+    }
+}

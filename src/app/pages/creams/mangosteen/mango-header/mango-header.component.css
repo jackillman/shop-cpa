@@ -1,0 +1,265 @@
+.header{
+    background: radial-gradient(ellipse at center, #a0df4e 0%, #489d00 100%);
+    overflow: hidden;
+    /* margin-bottom: 50px; */
+}
+.header__top .header__top-content{
+    color: #fff;
+
+}
+.header__top .logo{
+    margin-top: 30px
+
+}
+.header__top .header__top-content h3{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+.header__top .header__top-content p{
+    font-size: 20px;
+}
+.header__top-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom: 80px;
+    
+}
+.header__top-list li{
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 18px;
+    color: #0d3f16;
+}
+.header__top-list li:before{
+    content: "";
+    position: absolute;
+    background:url(/assets/images/mangosteen/icon-bullet.png) no-repeat center;
+    height: 30px;
+    width: 30px;
+    left: -30px;
+
+
+}
+.header__mid .header__mid-content{
+    line-height: 1.5;
+}
+.header__mid .header__mid-text1{
+    color: #fff;
+    font-size: 18px;
+}
+.header__mid .header__mid-text2{
+    color: #0d3f16;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.header__mid .header__mid-text3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.header__mid .header__mid-price{
+    font-size: 22px;   
+}
+.header__mid .header__mid-price .prices .price-now{
+    color: #ffe400;
+    font-size: 40px;
+    
+}
+.header__mid .header__mid-price .prices .price-old{
+    color:#555;
+    font-size: 40px;
+    text-decoration:line-through;
+    
+}
+
+.header__mid .header__mid-img{
+    position: relative;
+}
+.header__mid .header__mid-img .top-bottle{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.header__mid-img:before{
+    content:"";
+    background:url(/assets/images/mangosteen/discount.png) no-repeat center;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    top: -50px;
+    left: -30px;
+
+}
+.header__mid .header__mid-img .top-woman{
+    position: absolute;
+    top: -200px;
+}
+.top-btn{
+    height: 50px;
+    background: orange;
+    border: none;
+    margin: 20px auto;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.top-btn:hover{
+    background: darkorange;
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .header__top-list li{
+        font-size: 16px;
+    }
+    .header__mid-price .prices{
+        font-size: 16px;
+    }
+    .header__mid .header__mid-price .prices .price-old{
+        font-size: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .header__mid .header__mid-text1{
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 11;
+    }
+    .header__mid .header__mid-text2{
+        display: none;
+    }
+    .header__mid .header__mid-img .top-woman{
+        top: auto;
+        width: 200px;
+    }
+    .header__mid .header__mid-img .top-bottle{
+        margin-top: 0px;
+    }
+    .header__mid-img:before{
+        top: -100px;
+        z-index: 0;
+    }
+}
+
+@media (min-width:500px) and (max-width:767px){
+    .header__top .logo{
+        margin: 20px auto 10px;
+        display: block;
+    
+    }
+    .header__top .header__top-content h3{
+        text-align: center;
+        font-size: 46px;
+    }
+    .header__top .header__top-content p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .header__top-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+    .header__mid-text1,.header__mid-text2,.header__mid-text3{
+        text-align: center;
+    }
+    .header__mid .header__mid-img .top-woman{
+        display: none;
+    }
+    .header__mid-price .prices{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .top-btn{
+        margin: 10px auto 30px;
+        display: block;
+    }
+
+    .header__mid .header__mid-img-sm{
+        position: relative;
+    }
+    .header__mid .header__mid-img-sm .top-bottle-sm{
+        margin: 50px auto;
+        display: block;
+    }
+    .header__mid-img-sm:before{
+        content:"";
+        background:url(../../../../../assets/images/mangosteen/discount.png) no-repeat center;
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        top: -50px;
+        left: 50%;
+    
+    }
+}
+@media (max-width:499px){
+    .header__top .logo{
+        margin: 20px auto 10px;
+        display: block;
+    
+    }
+    .header__top .header__top-content h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    .header__top .header__top-content p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .header__top-list{
+        flex-direction: column;
+        margin-bottom: 30px;
+
+    }
+    .header__top-list li{
+        font-size: 14px;
+        margin-right: 0px;
+    }
+    .header__mid-text1,.header__mid-text2,.header__mid-text3{
+        text-align: center;
+    }
+    .header__mid .header__mid-img .top-woman{
+        display: none;
+    }
+    .header__mid-price .prices{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .top-btn{
+        margin: 10px auto 30px;
+        display: block;
+    }
+
+    .header__mid .header__mid-img-sm{
+        position: relative;
+    }
+    .header__mid .header__mid-img-sm .top-bottle-sm{
+        margin: 50px auto;
+        display: block;
+    }
+    .header__mid-img-sm:before{
+        content:"";
+        background:url(../../../../../assets/images/mangosteen/discount.png) no-repeat center;
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        top: -50px;
+        left: 50%;
+    
+    }   
+}

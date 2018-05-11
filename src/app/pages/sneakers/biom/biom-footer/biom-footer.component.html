@@ -1,0 +1,47 @@
+<div class="biom-footer">
+    <h3 class="biom-footer-title">Преимущества кроссовок ECCO Biom</h3>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="biom-footer-list">
+          <li class="list-item">
+              <h4>Высокое качество</h4>
+              <img src="./assets/images/biom/img_01.png" alt="">
+              <p>Натуральная кожа и высококачественные материалы будут радовать хозяина не один год! Качественные материалы - залог успеха кросовок ECCO!</p>
+          </li>
+          <li class="list-item">
+              <h4>Современные технологии</h4>
+              <img src="./assets/images/biom/img_02.jpg" alt="">
+              <p>Износотойкость, комфорт, анатомическое строение колодки. Подошва из высокотехнологичного каучука обеспечивает идеальное сцепление с поверхностью!</p>
+          </li>
+          <li class="list-item">
+              <h4>Стильные и элегантные</h4>
+              <img src="./assets/images/biom/img_03.png" alt="">
+              <p>Кроссовки ECCO - оригинальные, современные, модные - подчеркнут статус и вкус своего обладателя. Стильная обувь ECCO никогда не выходит из моды</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+          <form #myFormbot="ngForm" (ngSubmit)="submitForm(myFormbot)" novalidate class="biom-footer__form">
+              <h4>Заказать со скидкой</h4>
+              <div class="form-group">
+                  <label for="biomFooterName">Ваше имя</label>
+                  <input type="text" name="name" class="form-control" id="biomFooterName" ngModel  placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                  <label for="biomFooterPhone">Ваш телефон</label>
+                  <input type="number" name="phone" class="form-control" id="biomFooterPhone" ngModel  placeholder="Ваш телефон" required>
+                </div>
+                  <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+                  <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+                
+  
+                <button type="submit"  class="btn btn-primary send-bot">Заказать со скидкой</button>
+            </form>
+           
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+
+<div class="bob-header">
+  <div class="container">
+    <div class="row">
+      <div class="header__top">
+        <div class="col-sm-3 col-md-3">
+          <img class="logo" src="./assets/images/bobby/bobby.png" alt="">
+        </div>
+        <div class="col-sm-5 col-md-5">
+          <h3 class="text-top">
+            Лучший городской рюкзак 2017 года с защитой от карманников
+          </h3>
+          <div class="text-prize">
+            Power Bank в подарок
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <button type="button" class="btn btn-primary top-btn" (click)="popupWindow()">Получить консультацию</button>
+        </div>
+      </div>
+
+      <div class="header__mid">
+        <div class="col-sm-7 col-md-8">
+            <img class="people-img" src="./assets/images/bobby/product.png" alt="checked">
+            <div class="header-mid-content">
+              <p class="header-mid-text ">Защита от краж</p>
+              <p class="header-mid-text">Защита от вскрытия</p>
+              <p class="header-mid-text">Заметен ночью</p>
+              
+              
+            </div>
+            <div class="new-price"><span class="new-p">новая цена</span> <p> 2990 <span class="currency"> РУБ.</span></p> </div>
+            
+           
+        </div>
+        <div class="col-sm-5 col-md-4">
+         
+          <h4 class="people-text">Уже 640 человек купили рюкзак</h4>
+          <img class="people-img-right" src="./assets/images/bobby/icons-checked.png" alt="checked">
+
+          <form #myFormHed="ngForm" (ngSubmit)="submitForm(myFormHed)" novalidate class="bob__mid_form">
+              <!-- <div class="form-group">
+                  <label for="selCountry">Выберите страну</label>
+                  <select class="form-control" id="selCountry">
+                    <option value="ru" >Россия</option>
+                    
+             
+                  </select>
+                </div> -->
+            <div class="form-group">
+              <label for="bobbyHeaderName">Ваше имя</label>
+              <input type="name" name="name" class="form-control" id="bobbyHeaderName" aria-describedby="emailHelp" ngModel placeholder="Введите ФИО" required>
+             
+            </div>
+            <div class="form-group">
+              <label for="bobbyHeaderPhone">Ваш телефон</label>
+              <input type="number" name="phone" class="form-control" id="bobbyHeaderPhone" ngModel placeholder="Телефон" required>
+            </div>
+            <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+              <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+            <button type="submit" class="btn btn-primary send-top" >Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+     
+
+
+
+
+<!--  
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Получить консультацию</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="bobbyHeaderName">Ваше имя</label>
+        <input type="name" class="form-control" id="bobbyHeaderName" aria-describedby="emailHelp" placeholder="Введите ФИО">
+       
+      </div>
+      <div class="form-group">
+        <label for="bobbyHeaderPhone">Ваш телефон</label>
+        <input type="number" class="form-control" id="bobbyHeaderPhone" placeholder="Телефон">
+      </div>
+      <button type="submit" class="btn btn-primary">Отправить заявку</button>
+    </form>
+  </div>
+</ng-template> -->
+

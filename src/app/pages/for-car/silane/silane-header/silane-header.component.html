@@ -1,0 +1,67 @@
+<div class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row header__top-box">
+        <div class="col-sm-3 col-md-3">
+          <div class="header__top-logo">
+            <img src="./assets/images/silane/logo.png" alt="" class="logo">
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+          <ul class="header__top-list">
+            <li><a [ngx-scroll-to]="'#dest-silane-header'">О продукте</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-adv'">Преимущества</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-res'">Результат</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-spec'" [ngx-scroll-to-offset]="-100">Акция</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-about'">О компании</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-review'">Отзывы</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-method'">Метод нанесения</a></li>
+            <li><a [ngx-scroll-to]="'#dest-silane-faq'">FAQ</a></li>
+          </ul>
+          <button class="call-me-header hidden-lg"  (click)="popupWindow()">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__mid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="header__mid-title">ЖИДКОЕ СТЕКЛО WILLSON SILANE GUARD </h1>
+          <h2 class="header__mid-desc">НОВОЕ ПОКОЛЕНИЕ ЖИДКОГО СТЕКЛА WILLSON GLASS</h2>
+            <div class="header__mid-box">
+              <p class="box-top">РЕВОЛЮЦИОННЫЙ ПРОДУКТ ОТ ЯПОНСКОЙ КОМПАНИИ WILLSON – ОДНОКОМПОНЕНТНОЕ «ЖИДКОЕ СТЕКЛО»</p>
+              <p class="box-bot">Сохраняет оригинальный, яркий и насыщенный цвет кузова. Придает сияющий блеск кузову автомобиля в течение долгого времени – до 1 года! Дополнительно придает устойчивый водоотталкивающий эффект.</p>
+            </div>
+            <div class="video"><a class="a-video" (click)="callPopupWindowVideo()"><img src="./assets/images/silane/play.png" alt=""></a></div>
+            <div class="pic">
+              <p>Просмотреть ролик о SILANE GUARD</p>
+              <img class="pic-img" src="./assets/images/silane/box_img.png" alt="">
+              <div class="box-price">
+                <div class="old-price">3980 руб.</div>
+                <div class="now-price">1990 <br> <span>руб.</span> </div>
+              </div>
+              <button class="header__mid-buy" (click)="popupWindow()">Купить</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="isModalShownVideo" [config]="{ show: true }" (onHidden)="onHidden()" bsModal #autoShownModalVideo="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Обзор</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="hideModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4YvVo_lx1WY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>

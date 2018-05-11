@@ -1,0 +1,68 @@
+<div class="mango__mid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-md-6">
+        <div class="mango-content">
+          <h4>Купите крем «Mangosteen»
+            и навсегда забудьте о растяжках!</h4>
+            <div class="left-content">
+              <div class="mango__mid__prices">
+                <div class="new-price"> Всего 990 руб.</div>
+                
+                <div class="old-price">Вместо <span>1980</span> руб.</div>
+              </div>
+              <div class="mango-timer">
+                <p>До конца акции осталось:</p>
+                <div class="hour time">
+                  {{hour | number: '2.0'}}
+                </div>
+                <div class="minute time">
+                  {{minute | number: '2.0'}}
+                </div>
+                <div class="seconds time">
+                  {{second | number: '2.0'}}
+                </div>
+                <h1>
+                 
+              </h1>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="col-sm-2 col-md-2">
+        <div class="mango__mid-bottle">
+            <img src="./assets/images/mangosteen/bottle.png" alt="" class="mango-product">
+    
+        </div>
+
+    </div>
+    <div class="col-sm-5 col-md-4">
+        <form  #myFormMid="ngForm" (ngSubmit)="submitForm(myFormMid)" novalidate class="mango-mid_form">
+            <!-- <div class="form-group">
+                <label for="mangoselmidCountry">Выберите страну</label>
+                <select class="form-control" id="mangoselmidCountry">
+                  <option value="ru" >Россия</option>
+                  
+           
+                </select>
+              </div> -->
+          <div class="form-group">
+            <label for="mangoMidName">Ваше имя</label>
+            <input type="text" name="name" class="form-control" id="mangoMidName" ngModel placeholder="Введите ФИО" required>
+           
+          </div>
+          <div class="form-group">
+            <label for="mangoMidPhone">Ваш телефон</label>
+            <input type="text" name="phone" class="form-control" id="mangoMidPhone" ngModel placeholder="Ваш телефон" required>
+          </div>
+          <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+          <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+
+          <button type="submit" class="btn btn-primary send-mid">Отправить заявку</button>
+        </form>
+    </div>
+    </div>
+  </div>
+</div>
+

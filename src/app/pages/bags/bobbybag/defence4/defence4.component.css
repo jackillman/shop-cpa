@@ -1,0 +1,100 @@
+.defence4{
+    background: url(/assets/images/bobby/04-bg.jpg);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.defence4 .defence4__title{
+    font-size: 40px;
+    padding-bottom: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.defence4 .defence4__content{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.defence4 .defence4__img{
+    width: 100%;
+}
+.defence4 .defence4__popup{
+    height: 50px;
+    background: orange;
+    border: none;
+    margin: 20px auto;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.defence4 .defence4__popup:hover{
+    background: darkorange;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .defence4 .defence4__content{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .defence4 .defence4__title{
+        font-size: 34px;
+    }
+}
+
+@media (min-width:500px) and (max-width:767px){
+    .defence4{
+        background-size: cover;
+        
+    }
+    .defence4 .defence4__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence4 .defence4__content{
+        margin-top: 15px;
+    }
+    .defence4 .defence4__popup{
+        margin: 0 auto 20px;
+        display: block;
+        float: none;
+        
+
+    }
+    .defence4 .defence4__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width:499px){
+    .defence4{
+        background-size: cover;
+        
+    }
+    .defence4 .defence4__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence4 .defence4__content{
+        margin-top: 15px;
+    }
+    .defence4 .defence4__popup{
+        margin: 0 auto 20px;
+        display: block;
+        float: none;
+        font-size: 16px;
+
+    }
+    .defence4 .defence4__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}

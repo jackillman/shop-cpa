@@ -1,0 +1,71 @@
+<div class="sh-footer">
+
+
+
+
+  <div class="sh-footer__bot">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-8">
+          <div class="footer-bot-cont">
+          <ul class="sh-footer__bot-list">
+            <li>Предотвращает отложение солей</li>
+            <li>Восстанавливает суставы</li>
+            <li>Избавляет от боли и отеков</li>
+          </ul>
+          <div class="sh-footer__bot-list-pic">
+            <div class="item-remain">
+               <p class="remain-left"><span class="remain-count">7</span>шт.</p> 
+               <p class="remain-content">Осталось упаковок 
+                  со скидкой 50%</p>
+            </div>
+            <img src="./assets/images/sharkoil/dashboard__pack-1.png" alt="" class="sh-footer__bot-img">
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="sh-footer__bot-right">
+            <div class="sh-footer__bot-promo">
+              <h3>Акция! Скидка</h3>
+              <p>при заказе товара на нашем сайте</p>
+            </div>
+            <div class="sh-footer__bot-form">
+              <div class="prices">
+                <div class="old-price">
+                  <p>Старая цена</p>
+                  <p class="price-val">1980 руб.</p>
+                </div>
+                <div class="new-price">
+                    <p>Новая цена</p>
+                    <p class="price-val">990 руб.</p>
+                  </div>
+              </div>
+              <div class="total">
+                Итого: 990 руб.
+              </div>
+              <div class="text-inp">
+                Введите ваши данные в форму ниже:
+              </div>
+ 
+                  <form #myFormFoot="ngForm" (ngSubmit)="submitForm(myFormFoot)" novalidate class="footer-form">
+                      <div class="form-group">
+                        <label for="shfooterNameTop">Ваше имя</label>
+                        <input type="text" name="name" class="form-control" id="shfooterNameTop"  ngModel  placeholder="Введите имя" required>
+                        
+                      </div>
+                      <div class="form-group">
+                        <label for="shfooterPhoneTop">Телефон</label>
+                        <input type="text" name="phone" class="form-control" id="shfooterPhoneTop" ngModel placeholder="Введите телефон" required>
+                      </div>
+                      <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+                      <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+                      <button type="submit" class="btn btn-primary top-btn">Заказать сейчас</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

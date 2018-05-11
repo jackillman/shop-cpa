@@ -1,0 +1,104 @@
+<!-- <div class="top__menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="header__logo">
+          <img src="./assets/images/logo.png" alt="" class="logo__img">
+        </div>
+      </div>
+      <div class="col-sm-8">
+         <nav>
+          <ul>
+            <li><a href="/">FAQ</a></li>
+            <li><a href="/">Доставка</a></li>
+            <li><a href="/">Контакты</a></li>
+          </ul>
+        </nav> 
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="bottom__menu">
+
+
+<div class="container">
+  <div class="row">
+
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" [routerLink]="['']"><img src="./assets/images/logo.png" alt="" class="logo__img"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+           
+            <li class="dropdown">
+              <a [routerLink]="['creams']" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Крем <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a [routerLink]="['sharkoil']">Крем «Акулий жир» для суставов</a></li>
+                <li><a [routerLink]="['mangosteen']">Mangusteen крем от растяжек</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a [routerLink]="['sneakers']" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кроссовки <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a [routerLink]="['biom']">Кроссовки Ecco Biom</a></li>
+               
+              </ul>
+            </li>
+            <!-- <li><a href="#">Сыворотки</a></li>
+            <li><a href="#">Духи</a></li>
+            <li><a href="#">Часы</a></li> -->
+            <li class="dropdown">
+              <a [routerLink]="['bags']" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Рюкзаки <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a [routerLink]="['bobbybag']">Bobby + Powerbank в подарок</a></li>
+                <!-- <li><a [routerLink]="['jeepbag']">Jeep + часы Swiss в подарок</a></li> -->
+                <!-- <li><a href="#">Free Soldier</a></li> -->
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a [routerLink]="['for-car']" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Для авто <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a [routerLink]="['silane']">Жидкое стекло silane guard</a></li>
+              
+              </ul>
+            </li> 
+            <li >
+              <a [routerLink]="['login']" role="button" >Log In </a>
+
+            </li>           
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  </div>
+</div>

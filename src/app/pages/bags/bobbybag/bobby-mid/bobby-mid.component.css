@@ -1,0 +1,128 @@
+.bobby-mid{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.bobby-mid .bobby-mid-img{
+    margin: 0 auto;
+    display: block;
+}
+
+
+.bobby-mid .new-price{
+    position: relative;
+    color: orange;
+    font-size: 24px;
+
+}
+.new-price .new-p{
+    font-size: 20px;
+    position: absolute;
+    top: -10px
+}
+.new-price p{
+    font-size: 60px;
+    
+}
+.new-price .currency{
+    font-size: 27px;
+}
+.bobby-mid .old-price{
+    position: relative;
+    color: #333;
+    font-size: 24px;
+   
+}
+.old-price .old-p{
+    font-size: 20px;
+    position: absolute;
+    top: -10px
+}
+.old-price p{
+    font-size: 60px;
+    
+}
+.old-price .old-currency{
+    font-size: 27px;
+}
+
+
+.bobby-mid_form{
+    padding: 20px;
+}
+.bobby-mid_form .form-control{
+    height: 50px;
+}
+.people-text{
+    color: #fff;
+    text-align: center;
+}
+.people-img-right{
+    margin: 0 auto;
+    display: block;
+}
+.send-mid{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.bobby-timer{
+    display: block;
+    margin: 10px auto 30px;
+    width: 200px;
+}
+.timer-p{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.bobby-timer .time{
+    display: inline-block;
+    font-size: 24px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+.bobby-timer .hour:after{
+    content: "часов";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 8px;
+}
+.bobby-timer .minute{
+    
+
+}
+.bobby-timer .minute:after{
+    content: "минут";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 8px;
+}
+.bobby-timer .seconds:after{
+    content: "секунд";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 6px;
+}
+@media (min-width:500px) and (max-width:767px){
+    .bobby-mid .new-price, .bobby-mid .old-price{
+        margin: 0 auto;
+        display: block;
+        width: 220px;
+    }
+}
+@media (max-width:499px){
+    .bobby-mid_form{
+        padding: 20px 0px;
+    }
+    .bobby-mid .bobby-mid-img{
+        width: 100%;
+    }
+}

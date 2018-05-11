@@ -1,0 +1,198 @@
+.mango-footer__top{
+    padding: 40px;
+}
+.mango-footer__top h4{
+    text-align: center;
+    font-size: 26px;
+    width: 60%;
+    margin: 0 auto 30px;
+    display: block;
+}
+.mango-footer__top p{
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.mango-footer__bot{
+    background:url(/assets/images/mangosteen/form-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.mango-footer__bot .mango-content h4 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.mango-footer__bot .mango-content .left-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+.mango-footer__bot .mango-content .mango-footer__bot__prices .new-price{
+    color: #ffe400;
+    font-size: 24px;
+}
+.mango-footer__bot .mango-content .mango-footer__bot__prices .old-price{
+    font-size: 20px;
+    color: #333;
+}
+.mango-footer__bot .mango-content .mango-footer__bot__prices .old-price span{
+    color: #333;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+.mango-timer p{
+    font-size: 18px;
+    color: #fff;
+}
+
+.mango-timer .time{
+    display: inline-block;
+    font-size: 24px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+.mango-timer .hour:after{
+    content: "часов";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 8px;
+}
+.mango-timer .hour{
+    
+    color: #fff;
+}
+.mango-timer .minute{
+    background: darkgreen;
+    color: #fff;
+}
+.mango-timer .seconds{
+    background: darkgreen;
+    color: #fff;
+}
+.mango-timer .minute:after{
+    content: "минут";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 8px;
+}
+.mango-timer .seconds:after{
+    content: "секунд";
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 6px;
+}
+.mango-footer__bot .mango__bot-bottle{
+    margin-top: 50px;
+    position: relative;
+
+}
+.mango-footer__bot-bottle:after{
+    content: "";
+    background: url(/assets/images/mangosteen/discount.png) no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:90px;
+}
+
+.mango-footer__bot_form{
+    padding: 20px;
+    background: rgba(33,33,33,0.5);
+    color: #fff;
+    margin-top: 30px;
+}
+.mango-footer__bot_form .form-control{
+    height: 50px;
+}
+
+
+.send-bot{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+@media (min-width:768px) and (max-width:991px){
+
+    .mango-footer__bot-bottle{
+        margin-top: 80px;
+    }
+    .mango-footer__bot-bottle:after{
+        top: 0px;
+        left: -30px;
+    }
+    .mango-footer__bot .mango-content .left-content{
+        flex-direction: column;
+    }
+}
+@media (min-width:500px) and (max-width:767px){
+    .mango-footer__top h4{
+        width: 100%;
+    }
+    .mango-footer__top p{
+        width: 100%;
+    }
+    .mango__footer .mango-content .left-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mango-footer__bot-bottle{
+        width: 160px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mango-product{
+        display: block;
+        margin: 0 auto;
+    }
+    .mango-footer__bot-bottle:after{
+        left: -60px;
+        top: 0;
+    }
+}
+
+@media (max-width:499px){
+    .mango-footer__top {
+        padding: 25px 5px;
+    }
+    .mango-footer__top h4{
+        width: 100%;
+        font-size: 26px;
+    }
+    .mango-footer__top p{
+        width: 100%;
+        font-size: 18px;
+    }
+    .mango-bot_form{
+        padding: 20px;
+    }
+    .mango-footer__bot .mango-content .left-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mango-footer__bot-bottle{
+        width: 160px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mango-product{
+        display: block;
+        margin: 0 auto;
+    }
+    .mango-footer__bot-bottle:after{
+        left: -46px;
+        top: 0;
+    }
+}

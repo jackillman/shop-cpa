@@ -1,0 +1,52 @@
+.mango-reviews{
+    background: radial-gradient(ellipse at center, #854d57 0%, #44285d 100%);
+    padding-bottom: 40px;
+}
+.mango-reviews h3{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.review-item{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.review-item img{
+    width: 120px!important;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+
+}
+.review-item h4{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.review-item p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center; 
+    height: 110px; 
+}
+@media (min-width:768px) and (max-width:1199px) {
+    .review-item p{
+        height: 170px;
+        font-size: 14px;
+    }
+}
+@media (max-width:767px){
+    .review-item p{
+        height: 260px;
+        font-size: 14px;
+    }
+}
+@media (max-width:499px){
+    .review-item p{
+        height: 400px;
+        font-size: 12px;
+    }
+}

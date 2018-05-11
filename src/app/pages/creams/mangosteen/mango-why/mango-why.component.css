@@ -1,0 +1,65 @@
+
+.mango-why{
+    padding-bottom: 40px;
+    background: url(/assets/images/mangosteen/why-bg.jpg);
+    padding-top: 30px;
+
+}
+.mango-why .mango-why-title{
+    width: 50%;
+    font-size: 36px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.mango-why .mango-why-desc{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 40px;
+
+}
+.mango-why .mango-why-cont{
+    margin-bottom: 20px;
+}
+.mango-why .mango-why-cont h4{
+    font-weight: bold;
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .mango-why .mango-why-img{
+        display: block;
+        margin: 0 auto 20px;
+    }  
+}
+@media (min-width:768px) and (max-width:991px){
+    .mango-why .mango-why-img{
+        display: block;
+        margin: 0 auto 20px;
+    }  
+}
+@media (min-width:500px) and (max-width:767px){
+    .mango-why .mango-why-img{
+        display: block;
+        margin: 0 auto 20px;
+    }  
+    .mango-why .mango-why-cont{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:499px){
+    .mango-why .mango-why-img{
+        display: block;
+        margin: 0 auto 20px;
+        width: 100%;
+    }  
+    .mango-why .mango-why-title{
+        width: 100%;
+        font-size: 26px;
+    }
+    .mango-why .mango-why-desc{
+        width: 100%;
+    }
+}

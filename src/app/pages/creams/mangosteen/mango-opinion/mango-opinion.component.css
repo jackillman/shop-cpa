@@ -1,0 +1,51 @@
+.mango-opinion{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.mango-opinion h3{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mango-opinion p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.mango-opinion .doctor{
+    float: right;
+}
+.mango-opinion .doctor p{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+@media (min-width:768px) and (max-width:991px){
+    .mango-opinion p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    } 
+}
+@media (min-width:500px) and (max-width:767px){
+    .mango-opinion .doctor{
+        float: none;
+
+    }
+    .mango-opinion img{
+        margin: 0 auto;
+        display: block;
+        width: 260px;
+    }
+}
+@media (max-width:499px){
+    .mango-opinion img{
+        margin: 0 auto;
+        display: block;
+        width: 260px;
+    }    
+    .mango-opinion .doctor p{
+        font-size: 14px;
+    }
+    .mango-opinion p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    } 
+}

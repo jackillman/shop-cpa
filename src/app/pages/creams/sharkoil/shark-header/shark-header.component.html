@@ -1,0 +1,105 @@
+<div class="sh-header">
+  <div class="sh-header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-2 col-lg-3">
+            <div class="sh-header__top-left">
+                <img src="./assets/images/sharkoil/nav-logo.png" alt="" class="logo">
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-9 col-md-10 col-lg-9">
+            <div class="sh-header__top-left">
+              <button class="popup-top hidden-md hidden-lg"  (click)="popupWindow()">Заказать обратный звонок</button>
+              <ul class="sh-header__top-list hidden-sm hidden-xs">
+                <li><a [ngx-scroll-to]="'#dest-shark-header'" [ngx-scroll-to-offset]="200">Закажите сейчас</a></li>
+                <li><a [ngx-scroll-to]="'#dest-shark-adv'" >Эффективность</a></li>
+                <li><a [ngx-scroll-to]="'#dest-shark-use'">Применение</a></li>
+                <li><a [ngx-scroll-to]="'#dest-shark-review'">Отзывы</a></li>
+                <li><a [ngx-scroll-to]="'#dest-shark-footer'">Акции и скидки</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sh-header__mid">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="sh-header__mid-cont">
+              <h1 class="sh-header__mid-title">Избавтесь от боли в суставах</h1>
+              <p class="sh-header__mid-desc">суставы без боли с кремом "Акулий жир"</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="sh-header__bot">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-8">
+          <div class="header-bot-cont">
+          <ul class="sh-header__bot-list">
+            <li>Предотвращает отложение солей</li>
+            <li>Восстанавливает суставы</li>
+            <li>Избавляет от боли и отеков</li>
+          </ul>
+          <div class="sh-header__bot-list-pic">
+            <div class="item-remain">
+               <p class="remain-left"><span class="remain-count">7</span>шт.</p> 
+               <p class="remain-content">Осталось упаковок 
+                  со скидкой 50%</p>
+            </div>
+            <img src="./assets/images/sharkoil/dashboard__pack-1.png" alt="" class="sh-header__bot-img">
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="sh-header__bot-right">
+            <div class="sh-header__bot-promo">
+              <h3>Акция! Скидка</h3>
+              <p>при заказе товара на нашем сайте</p>
+            </div>
+            <div class="sh-header__bot-form">
+              <div class="prices">
+                <div class="old-price">
+                  <p>Старая цена</p>
+                  <p class="price-val">1980 руб.</p>
+                </div>
+                <div class="new-price">
+                    <p>Новая цена</p>
+                    <p class="price-val">990 руб.</p>
+                  </div>
+              </div>
+              <div class="total">
+                Итого: 990 руб.
+              </div>
+              <div class="text-inp">
+                Введите ваши данные в форму ниже:
+              </div>
+ 
+                  <form #myFormTop="ngForm" (ngSubmit)="submitForm(myFormTop)" novalidate class="header-form">
+                      <div class="form-group">
+                        <label for="shHeaderNameTop">Ваше имя</label>
+                        <input type="text" name="name" class="form-control" id="shHeaderNameTop" ngModel  placeholder="Введите имя" required>
+                        
+                      </div>
+                      <div class="form-group">
+                        <label for="shHeaderPhoneTop">Телефон</label>
+                        <input type="number" name="phone" class="form-control" id="shHeaderPhoneTop" ngModel placeholder="Введите телефон" required>
+                      </div>
+                      <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+                      <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+                      <button type="submit" class="btn btn-primary top-btn">Заказать сейчас</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.biom-review h3{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.biom-review .review-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.biom-review .review-box img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.biom-review .review-box .review-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.biom-review .review-box .review-desc{
+    text-align: center;
+}
+@media (max-width: 992px){
+    .biom-review .review-box{
+        padding: 0;
+        margin-bottom: 30px; 
+    }
+}

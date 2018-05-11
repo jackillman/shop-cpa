@@ -1,0 +1,88 @@
+.defence2{
+    
+  
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.defence2 .defence2__title{
+    font-size: 40px;
+
+    padding-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+.defence2 .defence2__content{
+    margin-top: 30px;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 30px
+}
+.defence2 .defence2__img{
+    width: 100%;
+}
+.defence2 .defence2__popup{
+    height: 50px;
+    background: orange;
+    border: none;
+    margin: 20px auto;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.defence2 .defence2__popup:hover{
+    background: darkorange;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .defence2 .defence2__title{
+        font-size: 30px;
+    }
+    .defence2 .defence2__content{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:500px) and (max-width:767px){
+    .defence2 .defence2__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence2 .defence2__content{
+        margin-top: 10px;
+    }
+    .defence2 .defence2__popup{
+        margin: 0 auto 20px;
+        display: block;
+    }
+    .defence2 .defence2__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width:499px){
+    .defence2 .defence2__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence2 .defence2__content{
+        margin-top: 10px;
+    }
+    .defence2 .defence2__popup{
+        margin: 0 auto 10px;
+        display: block;
+        font-size: 16px;
+        
+    }
+    .defence2 .defence2__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}

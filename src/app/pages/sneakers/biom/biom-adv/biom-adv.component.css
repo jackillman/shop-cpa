@@ -1,0 +1,85 @@
+.biom-adv .biom-adv-h3{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    background: #00aff2;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.biom-adv-content p{
+    margin-bottom: 5px;
+}
+.biom-adv-content .biom-title{
+    font-weight: bold;
+}
+.biom-features{
+    list-style-type: disc;
+}
+.biom-size{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.biom-size li{
+   display: inline-flex;
+   padding: 5px;
+   margin: 5px;
+   width: 30%;
+   background: #aaa;
+   border-radius: 10px;
+   text-align: center;
+   justify-content: center;
+}
+.biom-size li span{
+    font-weight: bold;
+}
+.call-size{
+    background: lightgreen;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.biom-adv-content .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.biom-adv-content .prices .old-price{
+    font-size: 22px;
+    text-decoration: line-through;
+    color: #555;
+}
+.biom-adv-content .prices .new-price{
+    color: #22c2ff;
+    font-weight: bold;
+
+}
+.biom-adv-content .buy-now{
+    margin: 10px auto;
+    font-size: 22px;
+    display: block;
+
+}
+@media (min-width:992px) and (max-width:1199px){
+    .biom-adv-content p{
+        margin-bottom: 0px;
+    }  
+    .biom-size li{
+        width: 25%;   
+    }
+}
+@media (max-width:499px){
+    .biom-adv .biom-adv-h3{
+        font-size: 24px;
+    }
+    .biom-size li{
+        width: 25%;
+    }
+}

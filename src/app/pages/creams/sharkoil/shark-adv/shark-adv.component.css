@@ -1,0 +1,69 @@
+.sh-adv{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.sh-adv h3{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 36px;
+    color: #ff004f;
+}
+
+
+.sh-adv-content .adv-card{
+    display: flex;
+}
+
+.sh-adv-content .adv-card h4{
+    font-size: 24px;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.adv-card-tleft{
+    text-align: right;
+}
+.adv-card-tright{
+    text-align: left;
+}
+.sh-adv-content .adv-card p{
+    font-size: 20px;
+ 
+    color: #706e6e;
+}
+.sh-adv-content .adv-card .card-left{
+    padding-top: 20px;
+}
+
+.sh-adv-content .adv-card.adv-card-tleft .card-left{
+    padding-right: 25px;
+}
+
+.sh-adv-content .adv-card.adv-card-tright .card-left{
+    padding-left: 25px;
+}
+
+@media (max-width: 499px){
+    .sh-adv h3{
+        font-size: 32px;
+    }
+    .sh-adv-content .adv-card.adv-odd{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .sh-adv-content .adv-card img{
+        margin: 0 auto;
+        display: block;
+    }
+    .sh-adv-content .adv-card.adv-even{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sh-adv-content .adv-card.adv-card-tleft .card-left{
+        padding-right: 0px;
+    }
+    .sh-adv-content .adv-card.adv-card-tright .card-left{
+        padding-left: 0px;
+    }
+}

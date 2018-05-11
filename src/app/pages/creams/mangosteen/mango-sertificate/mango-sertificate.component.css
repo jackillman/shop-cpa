@@ -1,0 +1,35 @@
+.mango__sert{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.mango__sert h4{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.mango__sert .sert-content{
+    padding-left: 60px;
+}
+.mango__sert .sert-content p{
+    font-size: 18px;
+}
+
+.mango__sert .sert__left{
+    background: url(/assets/images/mangosteen/icon-feature-01.png) no-repeat center;
+    background-position: 0 0
+}
+
+.mango__sert .sert__right{
+    background: url(/assets/images/mangosteen/icon-feature-02.png) no-repeat center;
+    background-position: 0 0
+}
+@media (max-width:499px){
+    .mango__sert .sert-content{
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mango__sert .sert__left,.mango__sert .sert__right{
+        background: #ffffff;
+    }
+}

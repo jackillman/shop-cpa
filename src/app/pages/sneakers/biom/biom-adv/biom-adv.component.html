@@ -1,0 +1,58 @@
+<div class="biom-adv">
+    <h3 class="biom-adv-h3">
+        Закажи сегодня и получи скидку 50%
+      </h3>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="biom-slider">
+            <carousel [showIndicators]="showIndicator">
+                <slide *ngFor="let slide of slides; let index=index">
+                  <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+               
+                  <div class="carousel-caption">
+                          
+                  </div>
+                </slide>
+              </carousel>
+              <br/>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="biom-adv-content">
+            <p> <span class="biom-title">Бренд:</span> ECCO </p>
+            <p> <span class="biom-title">Сезон:</span> демисезон </p>
+            <p> <span class="biom-title">Страна бренда:</span> Дания </p>
+            <p> <span class="biom-title">Материал:</span> натуральная кожа </p>
+            <p> <span class="biom-title">Подошва:</span> Износостойкая, антискользящая </p>
+            <p> <span class="biom-title">Особенности:</span></p>
+            <ul class="biom-features">
+              <li>Высокая износоустойчивость</li>
+              <li>Четкие линии, лаконичный дизайн</li>
+              <li>Имеет приятные тактильные свойства</li>
+              <li>Качественные материалы</li>
+              <li>Не растягивается и не трескается</li>
+            </ul>
+            <p> <span class="biom-title">Размер</span>/Стелька (см) </p>
+            <ul class="biom-size">
+                <li><span>41</span>/27.5</li>
+                <li><span>42</span>/28</li>
+                <li><span>43</span>/28.5</li>
+                <li><span>44</span>/29</li>
+                <li><span>45</span>/29.5</li>
+                <li><span>46</span>/30</li>
+              </ul>
+              <button class="call-size">Как выбрать размер</button>
+              <div class="prices">
+                <div class="old-price">Старая цена 7780 руб</div>
+                <div class="new-price"> Всего 3890 руб.</div>
+              </div>
+              <button class="buy-now btn btn-primary" (click)="popupWindow()">Заказать со скидкой</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="login">
+  <div class="container">
+    <div class="row">
+      <form #formData="ngForm" (ngSubmit)="login(formData)" novalidate>
+        <div class="form-group">
+          <label for="myname">Имя</label>
+          <input type="test" name="myname" class="form-control" id="myname" [(ngModel)]="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input type="password" name="mypass" class="form-control" id="password" [(ngModel)]="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="image-box">
+ 
+      <div class="my-cols col-md-3 col-xs-6" *ngFor="let img of carsImages">
+          <img src="{{img.photo}}" alt="img" (click)="popupAuto(img.photo)">
+        </div>
+ 
+
+</div>
+
+<div *ngIf="isModalShownAuto" [config]="{ show: true }" (onHidden)="onHidden()" bsModal #autoShownModalAuto="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Эффект использования silane guard</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="hideModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src={{currentImage}} alt="img" class="popup-auto">
+        </div>
+      </div>
+    </div>
+  </div>

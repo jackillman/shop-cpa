@@ -1,0 +1,63 @@
+<div class="sh-promo">
+  
+    <div class="container">
+      <div class="row">
+        <div class="sh-form">
+          <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="promo-pic">
+              <img src="./assets/images/sharkoil/form--big__lip.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 hidden-sm hidden-xs">
+            <div class="promo-content">
+              <h3 class="promo-title">Акция! Скидка</h3>
+              <p class="promo-desc">
+                при заказе товара на нашем сайте 
+              </p>
+              <div class="promo-prices">
+                <div class="old-price">
+                  старая цена <span>1980 руб.</span>
+                </div>
+                <div class="new-price">
+                  новая цена <span>990 руб.</span>
+                </div>
+              </div>
+              <div class="promo-total">
+                итого: <span>990 руб.</span> + доставка (подробности у оператора)
+              </div>
+              <div class="sh-promo-pic">
+                  <div class="item-remain">
+                      <p class="remain-left"><span class="remain-count">7</span>шт.</p> 
+                      <p class="remain-content">Осталось упаковок 
+                         со скидкой 50%</p>
+                   </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="promo-right">
+                <div class="text-inp">
+                    Введите ваши данные в форму ниже:
+                  </div>
+     
+                      <form #myFormMid="ngForm" (ngSubmit)="submitForm(myFormMid)" novalidate class="promo-form">
+                          <div class="form-group">
+                            <label for="shNameMid">Ваше имя</label>
+                            <input type="text" name="name" class="form-control" id="shNameMid"  ngModel  placeholder="Введите имя" required>
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="shPhoneMid">Телефон</label>
+                            <input type="text" name="phone" class="form-control" id="shPhoneMid"  ngModel placeholder="Введите телефон" required>
+                          </div>
+                          <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+                          <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+                          <button type="submit" class="btn btn-primary top-btn">Заказать сейчас</button>
+                      </form>
+            </div>
+           
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

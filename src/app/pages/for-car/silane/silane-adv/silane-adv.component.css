@@ -1,0 +1,77 @@
+/* .adv{
+    margin-top: 40px;
+}
+
+.adv .adv-titles{
+    text-align: center;
+}
+.adv .adv-titles h3{
+    font-size: 46px;
+}
+.adv .adv-titles h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #be0026;
+}
+.adv .adv-contents{
+    background: url(/assets/images/silane/avantages_block_bg.png) no-repeat center;
+    background-size: contain;
+    height: 400px;
+    width: 100%;
+} */
+
+.avantages { background:#f4f4f4; }
+.avantages .wrap { padding-top:40px; }
+.avantages_block {margin: 0 auto;position:relative;z-index:2;text-align:center;width:1000px;background:url(/assets/images/silane/avantages_block_bg.png) no-repeat;background-size:100% 100%;padding-bottom:70px;}
+.avantages_block h3 { padding-top:55px; font-size:30px; line-height:30px; color:#484848; text-transform:uppercase; }
+.avantages_block h3 span { color:#be0026; display:inline-block; font-size:60px; line-height:50px; }
+.avantages_list { margin-top:55px; font-size:0; text-align:center; }
+.avantages_list li { display:inline-block; vertical-align:top; width:210px; font-size:14px; }
+.avantages_list li .img_block { height:85px; margin-bottom:36px; }
+.avantages_list li .img_block img { height:85px; }
+.avantages_list li p { font-size:14px; line-height:20px; color:#424242;}
+.avantages_block .video-wrap{width:90%;max-width:600px;margin:30px auto 0;}
+.avantages_block .video-frame{position:relative;padding-bottom:56.25%;}
+.avantages_block .video-container{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:auto;height:auto;}
+.avantages_block .youtube{background-size:contain;}
+
+@media (min-width: 992px) and (max-width:1199px){
+    .avantages_block{
+        width: 900px;
+    }  
+}
+@media (min-width: 768px) and (max-width:991px){
+    .avantages_block{
+        width: 700px;
+    }  
+    .avantages_list li{
+        width: 300px;
+    }
+}
+
+@media (min-width: 500px) and (max-width:767px){
+    .avantages_block{
+        background: transparent;
+        width: 100%;
+    }
+    .avantages_list li{
+        width: 260px;
+    }
+}
+@media (max-width: 499px){
+    .avantages_block h3{
+        font-size: 18px;
+    }
+    .avantages_block{
+        background: transparent;
+        width: 100%;
+    }
+    .avantages_list li{
+        width: 100%;
+    }
+    .avantages_block h3 span{
+        font-size: 30px;
+        display: block;
+        width: 100%;
+    }
+}

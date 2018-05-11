@@ -1,0 +1,57 @@
+.mango-func{
+    background:url(/assets/images/mangosteen/func-bg.jpg);
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+}
+.mango-func h3{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mango-func ul{
+    list-style-type: none;
+}
+.mango-func ul li{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.mango-func ul li:before{
+    content:"";
+    background:url(/assets/images/mangosteen/icon-bullet2.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left:-50px;
+    top: -8px;
+}
+@media (min-width:992px) and (max-width:1199px){
+    .mango-func ul li{
+       font-size: 18px; 
+        
+    }
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .mango-func ul li{
+        font-size: 16px; 
+         
+     }   
+
+}
+@media (min-width:500px) and (max-width:767px){
+    .func-content{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:499px){
+    .mango-func ul li{
+        font-size: 17px;
+    }
+}

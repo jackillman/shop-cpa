@@ -1,0 +1,85 @@
+.defence{
+    
+    background: url(/assets/images/bobby/01-bg.png);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.defence .defence__title{
+    font-size: 40px;
+    
+    padding-bottom: 60px;
+    color: #fff;
+    text-align: center;
+}
+.defence .defence__content{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px
+}
+.defence .defence__img{
+    width: 100%;
+}
+.defence .defence__popup{
+    height: 50px;
+    background: orange;
+    border: none;
+    margin: 20px auto;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.defence .defence__popup:hover{
+    background: darkorange;
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .defence .defence__content{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .defence .defence__title{
+        font-size: 34px;
+    }
+}
+@media (min-width:500px) and (max-width:767px){
+    .defence .defence__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence .defence__content{
+        margin-top: 10px;
+    }
+    .defence .defence__popup{
+        margin: 0 auto;
+        display: block;
+    }
+    .defence .defence__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:499px){
+    .defence .defence__number{
+        display: block;
+        margin: 0 auto;
+    }
+    .defence .defence__content{
+        margin-top: 10px;
+    }
+    .defence .defence__popup{
+        margin: 0 auto;
+        display: block;
+        font-size: 16px;
+    }
+    .defence .defence__title{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}

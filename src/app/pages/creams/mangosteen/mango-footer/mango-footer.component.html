@@ -1,0 +1,76 @@
+<div class="mango-footer">
+  <div class="mango-footer__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>ЗАКАЖИТЕ КРЕМ СЕЙЧАС И УЖЕ ЧЕРЕЗ МЕСЯЦ ОТ РАСТЯЖЕК НЕ ОСТАНЕТСЯ И СЛЕДА!</h4>
+          <p>Сомневаться в качестве крема не нужно. Товар сертифицирован. Натуральный состав.
+             Прошел все необходимые клинические испытания. Доказал на практике свою эффективность.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mango-footer__bot">
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-5 col-md-6">
+              <div class="mango-content">
+                <h4>Купите крем «Mangosteen»
+                  и навсегда забудьте о растяжках!</h4>
+                  <div class="left-content">
+                    <div class="mango-footer__bot__prices">
+                      <div class="new-price"> Всего 990 руб.</div>
+                      
+                      <div class="old-price">Вместо <span>1980</span> руб.</div>
+                    </div>
+                    <div class="mango-timer">
+                      <p>До конца акции осталось:</p>
+                      <div class="hour time">
+                        {{hour | number: '2.0'}}
+                      </div>
+                      <div class="minute time">
+                        {{minute | number: '2.0'}}
+                      </div>
+                      <div class="seconds time">
+                        {{second | number: '2.0'}}
+                      </div>
+                    </div>
+                  </div>
+      
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-2">
+              <div class="mango-footer__bot-bottle">
+                  <img src="./assets/images/mangosteen/bottle.png" alt="" class="mango-product">
+          
+              </div>
+      
+          </div>
+          <div class="col-sm-5 col-md-4">
+              <form #myFormFoot="ngForm" (ngSubmit)="submitForm(myFormFoot)" novalidate class="mango-footer__bot_form">
+                  <!-- <div class="form-group">
+                      <label for="mangoselbotCountry">Выберите страну</label>
+                      <select class="form-control" id="mangoselbotCountry">
+                        <option value="ru" >Россия</option>
+                        
+                 
+                      </select>
+                    </div> -->
+                <div class="form-group">
+                  <label for="mangobotName">Ваше имя</label>
+                  <input type="text" name="name" class="form-control" id="mangobotName"  ngModel placeholder="Ваше имя" required>
+                 
+                </div>
+                <div class="form-group">
+                  <label for="mangobotPhone">Ваш телефон</label>
+                  <input type="text" name="phone" class="form-control" id="mangobotPhone" ngModel placeholder="Ваш телефон" required>
+                </div>
+                <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+                <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+                <button type="submit" class="btn btn-primary send-bot">Отправить заявку</button>
+              </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

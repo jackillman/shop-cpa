@@ -1,0 +1,49 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>ЗАКАЖИТЕ СЕЙЧАС СО СКИДКОЙ 50%</h2>
+        <h3>ЖИДКОЕ СТЕКЛО WILLSON SILANE GUARD</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img class="footer-img" src="./assets/images/silane/pop.png" alt="">
+      </div>
+      <div class="col-sm-6">
+        <div class="form-box">
+          <p>До конца акции осталось:</p>
+            <div class="timer">
+                <div class="hour time">
+                    {{hour | number: '2.0'}}
+                  </div>
+                  <div class="minute time">
+                    {{minute | number: '2.0'}}
+                  </div>
+                  <div class="seconds time">
+                    {{second | number: '2.0'}}
+                  </div>
+            </div>
+            <div class="prices">
+              <p class="price old-price">3980 руб.</p>
+              <p class="price new-price">1990 руб.</p>
+            </div>
+            <form  #myFormFoot="ngForm" (ngSubmit)="submitForm(myFormFoot)" novalidate >
+              <div class="form-group">
+                <label for="silaneFooterName">Ваше имя</label>
+                <input type="text" name="name" class="form-control" id="silaneFooterName" ngModel placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="silaneFooterPhone">Ваш телефон</label>
+                <input type="text" name="phone" class="form-control" id="silaneFooterPhone" ngModel placeholder="Ваш телефон">
+              </div>
+              <input type="hidden" name="thread" class="form-control" [(ngModel)]="thread">
+              <input type="hidden" name="subid" class="form-control" [(ngModel)]="subid">
+              <button type="submit" class="btn btn-default btn-footer">Оформить заказ</button>
+            </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

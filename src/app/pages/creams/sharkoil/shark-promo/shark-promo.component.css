@@ -1,0 +1,171 @@
+.sh-promo{
+    background: url(/assets/images/sharkoil/form__bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.sh-promo .sh-form{
+    background: #003173;
+    height: 300px;
+}
+.promo-pic{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.promo-pic:after{
+    content: "";
+    background: url(/assets/images/sharkoil/sale50.png) no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.promo-pic img{
+    height: 290px;
+}
+.promo-content{
+    color: #fff;
+}
+.promo-content .promo-title{
+    color: #ffe44d;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.promo-content .promo-desc {
+    color: #ffe44d;
+    font-size: 22px;
+}
+.promo-prices {
+    display: flex;
+    justify-content: space-between;
+}
+.promo-prices span{
+    display: block;
+}
+.promo-prices .old-price{
+    font-size: 20px;
+}
+
+.promo-prices .new-price{
+    font-size: 20px;
+    color: lightgreen;
+}
+.promo-prices .new-price span{
+    font-size: 30px;
+    color: #ffe44d;
+}
+.promo-prices .old-price span{
+    text-decoration: line-through;
+}
+.promo-total span{
+    color: #ffe44d;
+}
+
+.sh-promo-pic{
+    background:url(/assets/images/sharkoil//dashboard__tooltip.png) no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+
+}
+.item-remain{
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+}
+.remain-left{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ff0060;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.remain-content{
+    padding-left: 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #333;
+}
+.promo-right{
+    padding: 10px 30px;
+    color: #fff;
+}
+.promo-right .inp-text{
+    color: #fff;
+}
+.top-btn{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: #ff2659;
+    background: linear-gradient(to bottom, #ff2659 0, #f0416d 42%, #f54781 51%, #ff0054 100%);
+    position: relative;
+    
+ }
+  .form-control{
+    height: 50px;
+ }
+ @media (min-width: 992px) and (max-width: 1199px){
+    .promo-content .promo-title{
+        color: #ffe44d;
+        font-size: 24px;
+    } 
+    .promo-content .promo-desc{
+        color: #ffe44d;
+        font-size: 16px;
+    } 
+ }
+ @media (min-width: 768px) and (max-width: 991px){
+    .sh-promo .sh-form{
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        height: 100%;
+    }
+ }
+
+ @media (min-width: 500px) and (max-width: 767px){
+    .sh-promo .sh-form{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        height: 100%;
+    }
+ }
+ @media (max-width: 499px){
+    .sh-promo .sh-form{
+        width: 98%;
+        margin: 0 auto;
+        padding: 10px;
+        height: 100%;
+    }
+    .promo-right{
+        padding: 10px 0;
+    }
+    .top-btn{
+        font-size: 24px;
+    }
+ }
